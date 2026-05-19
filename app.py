@@ -161,6 +161,8 @@ def predict_price(location, sqft, bath, bhk):
     return prediction
 
 # ---------------- BUTTON ----------------
+st.markdown("<br>", unsafe_allow_html=True)
+
 if st.button("🚀 Predict Price"):
 
     price = predict_price(location, sqft, bath, bhk)
